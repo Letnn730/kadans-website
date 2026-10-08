@@ -239,3 +239,9 @@ select:focus, input[type="email"]:focus, input[type="text"]:focus { outline: non
 .legal h2 { font-size: 22px; }
 .legal p, .legal li { color: var(--mute); }
 .legal ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+
+/* Kickstarter banner (assets/campaign.js) */
+.ks-banner { background: var(--surface); border-bottom: 1px solid var(--line); }
+.ks-banner .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px 20px; padding-block: 10px; }
+.ks-banner p { font-size: 14px; }
+.ks-tag { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--cyan); margin-right: 10px; }
