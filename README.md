@@ -1,4 +1,4 @@
-# kadans.ca
+# kurant.ca
 
 Bilingual landing page for **Kadans by FORGE**: product explanation, compatibility check and waitlist.
 French at `/`, English at `/en/`. Plain HTML, CSS and JS: no build step.
