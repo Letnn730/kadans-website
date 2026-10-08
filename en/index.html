@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
 <link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/demo.css">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -53,8 +54,8 @@
         <p class="hero-note">Working prototype. Waitlist open in Quebec.</p>
       </div>
 
-      <figure class="device" aria-label="Kadans app screen, example data">
-        <div class="phone">
+      <figure class="device">
+        <div class="phone" data-demo>
           <div class="screen">
             <div class="screen-top"><span class="screen-brand">KADANS</span><span class="live">Connected</span></div>
             <div class="speed"><b>24.6</b><span>km/h</span></div>
@@ -63,11 +64,11 @@
               <div class="tile"><small>Assist</small><b>2</b></div>
               <div class="tile"><small>Power</small><b>312 W</b></div>
             </div>
-            <div class="mode"><span>City mode</span><span>32 km/h max</span></div>
+            <div class="mode"><span>Street mode</span><span>32 km/h max</span></div>
             <p class="screen-foot">Settings when stopped</p>
           </div>
         </div>
-        <figcaption class="caption">App screen, example data</figcaption>
+        <figcaption class="demo-hint"><b>Simulation demo.</b> The app's own screens, connected to a virtual bike. Scroll, pick an assist level to ride, or OFF to stop and unlock the settings.</figcaption>
       </figure>
     </div>
   </section>
@@ -142,7 +143,7 @@
           <dl class="spec">
             <div><dt>Wheel size</dt><dd>in</dd></div>
             <div><dt>Speed limit</dt><dd>km/h</dd></div>
-            <div><dt>Modes</dt><dd>City · Off-road</dd></div>
+            <div><dt>Modes</dt><dd>Street · Offroad</dd></div>
             <div><dt>Lights</dt><dd>on / off</dd></div>
             <div><dt>Ride history</dt><dd>on your phone</dd></div>
             <div><dt>Module updates</dt><dd>through the app</dd></div>
@@ -164,8 +165,8 @@
         <li><span class="rule-key">&gt; 0.5 km/h</span><div><h3>No settings while riding</h3><p>Above 0.5 km/h, or when the speed is unknown, sensitive settings are locked.</p></div></li>
         <li><span class="rule-key">1.5 s</span><div><h3>No frozen values</h3><p>With no new data for 1.5 seconds, the screen shows “--” instead of an old number.</p></div></li>
         <li><span class="rule-key">Verified</span><div><h3>Settings open only after verification</h3><p>A setting can be changed only once its encoding has been measured on a real controller. The most important ones need a typed confirmation.</p></div></li>
-        <li><span class="rule-key">32 km/h</span><div><h3>City mode by default</h3><p>Out of the box, speed is limited to your province's legal maximum: 32 km/h in Quebec.</p></div></li>
-        <li><span class="rule-key warn">Off-road</span><div><h3>A mode for private land</h3><p>It switches on only when stopped, with a 1.5-second press followed by a confirmation. On public roads, a bike set above 32 km/h no longer counts as a power-assisted bicycle. The rider is responsible for how this mode is used.</p></div></li>
+        <li><span class="rule-key">32 km/h</span><div><h3>Street mode by default</h3><p>Out of the box, speed is limited to your province's legal maximum: 32 km/h in Quebec.</p></div></li>
+        <li><span class="rule-key warn">Offroad</span><div><h3>A mode for private land</h3><p>It switches on only when stopped, with a 1.5-second press followed by a confirmation. On public roads, a bike set above 32 km/h no longer counts as a power-assisted bicycle. The rider is responsible for how this mode is used.</p></div></li>
       </ul>
     </div>
   </section>
@@ -260,7 +261,7 @@
         <details><summary>What happens if my phone dies?</summary><p>The bike keeps working with the assist level you chose. You lose the display until the phone reconnects. A phone mount with charging is recommended.</p></details>
         <details><summary>Does installation need soldering?</summary><p>No. Kadans plugs into the original display's connector, with a cable made for your controller. Keep the original display: you can plug it back in at any time.</p></details>
         <details><summary>Why aren't Bosch and Shimano supported?</summary><p>Their systems are closed, and each already offers its own app that turns the phone into a display.</p></details>
-        <details><summary>How much will it cost?</summary><p>The price will be announced at launch. People on the waitlist will hear it first.</p></details>
+        <details><summary>How much will it cost?</summary><p>The planned price is CAD 159 plus tax, module and app included. The app has no subscription. People on the waitlist get first access to the launch offer.</p></details>
         <details><summary>Do I need an account?</summary><p>No. The app doesn't ask for an account, and your ride history stays on your phone.</p></details>
         <details><summary>When will Kadans be available?</summary><p>The prototype works on a bike with a KT controller. The date depends on certification and ongoing testing. The waitlist will hear first.</p></details>
       </div>
@@ -287,5 +288,6 @@
 
 <script src="../assets/compat.js" defer></script>
 <script src="../assets/site.js" defer></script>
+<script src="../assets/demo.js" defer></script>
 </body>
 </html>

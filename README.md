@@ -13,6 +13,7 @@ French at `/`, English at `/en/`. Plain HTML, CSS and JS: no build step.
 | `assets/site.css` | Styles, following the FORGE brand guide (Obsidienne / Blanc Titane / Cyan Glacial, Inter + JetBrains Mono) |
 | `assets/compat.js` | Compatibility list used by "Vérifier mon vélo". Keep in step with `ebike-profiles` |
 | `assets/site.js` | Compatibility tool and waitlist form |
+| `assets/demo.js`, `assets/demo.css` | Hero demo: the app's Ride and Settings screens running its simulator in the browser. Mirrors `ebike-app` (screens, wording, safety rules); only the Simulator source is offered. Keep in step when the app's UI changes |
 | `functions/api/waitlist.js` | Cloudflare Pages Function that stores sign-ups in D1 |
 | `schema.sql` | D1 table |
 | `_headers` | Security headers |

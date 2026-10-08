@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/demo.css">
 </head>
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
@@ -53,8 +54,8 @@
         <p class="hero-note">Prototype fonctionnel. Liste d'attente ouverte au Québec.</p>
       </div>
 
-      <figure class="device" aria-label="Écran de l'application Kadans, données d'exemple">
-        <div class="phone">
+      <figure class="device">
+        <div class="phone" data-demo>
           <div class="screen">
             <div class="screen-top"><span class="screen-brand">KADANS</span><span class="live">Connecté</span></div>
             <div class="speed"><b>24,6</b><span>km/h</span></div>
@@ -67,7 +68,7 @@
             <p class="screen-foot">Réglages à l'arrêt</p>
           </div>
         </div>
-        <figcaption class="caption">Écran de l'application, données d'exemple</figcaption>
+        <figcaption class="demo-hint"><b>Démo en simulation.</b> Les écrans de l'application, branchés sur un vélo virtuel. Faites défiler, choisissez une assistance pour rouler, ou OFF pour vous arrêter et déverrouiller les réglages.</figcaption>
       </figure>
     </div>
   </section>
@@ -260,7 +261,7 @@
         <details><summary>Que se passe-t-il si mon téléphone se décharge ?</summary><p>Le vélo continue de fonctionner avec l'assistance choisie. Vous perdez l'affichage jusqu'à la reconnexion. Un support de téléphone avec recharge est recommandé.</p></details>
         <details><summary>L'installation demande-t-elle de souder ?</summary><p>Non. Kadans se branche sur le connecteur de l'écran d'origine, avec un câble adapté à votre contrôleur. Gardez l'écran d'origine : vous pouvez le rebrancher en tout temps.</p></details>
         <details><summary>Pourquoi Bosch et Shimano ne sont-ils pas pris en charge ?</summary><p>Leurs systèmes sont fermés, et chacun offre déjà sa propre application qui transforme le téléphone en écran.</p></details>
-        <details><summary>Quel sera le prix ?</summary><p>Le prix sera annoncé au lancement. Les personnes inscrites le recevront en premier.</p></details>
+        <details><summary>Quel sera le prix ?</summary><p>Le prix prévu est de 159 $ CA, taxes en sus, module et application compris. L'application ne demande aucun abonnement. Les personnes inscrites auront accès en premier à l'offre de lancement.</p></details>
         <details><summary>Faut-il créer un compte ?</summary><p>Non. L'application ne demande pas de compte, et l'historique des trajets reste sur votre téléphone.</p></details>
         <details><summary>Quand Kadans sera-t-il offert ?</summary><p>Le prototype fonctionne sur un vélo à contrôleur KT. La date dépend de la certification et des essais en cours. La liste d'attente sera avertie en premier.</p></details>
       </div>
@@ -287,5 +288,6 @@
 
 <script src="assets/compat.js" defer></script>
 <script src="assets/site.js" defer></script>
+<script src="assets/demo.js" defer></script>
 </body>
 </html>
