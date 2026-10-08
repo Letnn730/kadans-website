@@ -12,7 +12,16 @@ const oneOf = (value, allowed) => (allowed.includes(value) ? value : "");
 
 const PROVINCES = ["QC", "ON", "BC", "AB", "MB", "SK", "NS", "NB", "NL", "PE", "YT", "NT", "NU", "XX"];
 
+const MAX_BODY_BYTES = 4096; // the form sends well under 1 KB
+
 export async function onRequestPost({ request, env }) {
+  if (!(request.headers.get("Content-Type") || "").includes("application/json")) {
+    return json({ ok: false, error: "bad_request" }, 415);
+  }
+  if (Number(request.headers.get("Content-Length") || 0) > MAX_BODY_BYTES) {
+    return json({ ok: false, error: "too_large" }, 413);
+  }
+
   let data;
   try {
     data = await request.json();
