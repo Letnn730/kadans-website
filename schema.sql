@@ -1,4 +1,4 @@
--- Kadans waitlist (Cloudflare D1)
+-- Kurant waitlist (Cloudflare D1)
 CREATE TABLE IF NOT EXISTS waitlist (
   id               INTEGER PRIMARY KEY AUTOINCREMENT,
   email            TEXT NOT NULL UNIQUE,

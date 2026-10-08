@@ -4,9 +4,9 @@
  * campaign state. The JSON is the only thing to edit when the campaign moves on:
  *   off       nothing shown (waitlist only)
  *   prelaunch "launching on <date>, get notified"  -> Kickstarter pre-launch page
- *   live      "live now, back Kadans"
+ *   live      "live now, back Kurant"
  *   funded    "funded, late pledges open"
- * kadans.ca/kickstarter (functions/kickstarter.js) follows the same file.
+ * kurant.ca/kickstarter (functions/kickstarter.js) follows the same file.
  *
  * Outside the production site, ?campaign=prelaunch|live|funded previews a state.
  */
@@ -20,7 +20,7 @@
   const lang = root.dataset.lang === "en" ? "en" : "fr";
   const STATES = ["prelaunch", "live", "funded"];
   const KICKSTARTER = /(^|\.)kickstarter\.com$/;
-  const PRODUCTION = /(^|\.)kadans\.ca$/.test(location.hostname);
+  const PRODUCTION = /(^|\.)kurant\.ca$/.test(location.hostname);
 
   const price = (cad) => (lang === "fr" ? `${cad} $` : `CAD ${cad}`);
   const day = (iso) => {
@@ -49,7 +49,7 @@
           : `Launching soon. Early-bird price of ${price(c.early)} for the first 100.`,
         cta: "Get notified at launch",
       }),
-      live: (c) => ({ banner: `Live now. Early-bird price of ${price(c.early)} for the first 100.`, cta: "Back Kadans on Kickstarter" }),
+      live: (c) => ({ banner: `Live now. Early-bird price of ${price(c.early)} for the first 100.`, cta: "Back Kurant on Kickstarter" }),
       funded: () => ({ banner: "Funded, thank you. Late pledges are open.", cta: "Make a late pledge" }),
     },
   }[lang];
