@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kadans</title>
+<meta name="description" content="Kadans replaces your e-bike's display: your phone shows speed, power and battery. Check whether your bike is compatible.">
+<link rel="alternate" hreflang="fr-CA" href="https://kadans.ca/">
+<link rel="alternate" hreflang="en-CA" href="https://kadans.ca/en/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230B0B0C'/%3E%3Cpath d='M14 18H86L73 40H27Z' fill='white'/%3E%3Cpath d='M31 47H69L50 79Z' fill='%2300D2FF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Kadans, home">
+      <span class="brand-word">KADANS</span>
+      <span class="brand-by">by
+        <svg class="forge-mark" viewBox="0 0 100 84" aria-hidden="true"><path class="a" d="M0 0H100L82 30H18Z"/><path class="b" d="M22.8 38H77.2L50 83.3Z"/></svg>
+        FORGE</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#how-it-works">How it works</a>
+      <a href="#data">Data</a>
+      <a href="#safety">Safety</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="top-actions">
+      <a class="lang" href="../index.html" lang="fr" hreflang="fr">FR</a>
+      <a class="btn btn-primary btn-sm" href="#check">Check my bike</a>
+    </div>
+  </div>
+</header>
+
+<main id="content" data-lang="en">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="slit" aria-hidden="true"></span>
+        <p class="eyebrow">E-bike interface</p>
+        <h1>Your bike. Your interface.</h1>
+        <p class="lede">Kadans replaces your e-bike's display. A small module plugs in where the screen was, and your phone shows speed, power and battery, with settings explained in plain words.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#check">Check my bike</a>
+          <a class="btn btn-ghost" href="#how-it-works">See how it works</a>
+        </div>
+        <p class="hero-note">Working prototype. Waitlist open in Quebec.</p>
+      </div>
+
+      <figure class="device" aria-label="Kadans app screen, example data">
+        <div class="phone">
+          <div class="screen">
+            <div class="screen-top"><span class="screen-brand">KADANS</span><span class="live">Connected</span></div>
+            <div class="speed"><b>24.6</b><span>km/h</span></div>
+            <div class="tiles">
+              <div class="tile"><small>Battery</small><b>78%</b></div>
+              <div class="tile"><small>Assist</small><b>2</b></div>
+              <div class="tile"><small>Power</small><b>312 W</b></div>
+            </div>
+            <div class="mode"><span>City mode</span><span>32 km/h max</span></div>
+            <p class="screen-foot">Settings when stopped</p>
+          </div>
+        </div>
+        <figcaption class="caption">App screen, example data</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="Key figures">
+    <div class="wrap">
+      <div class="fact"><b>48–52 V</b><span>Supported batteries</span></div>
+      <div class="fact"><b>0.5 km/h</b><span>Above this, settings lock</span></div>
+      <div class="fact"><b>1.5 s</b><span>No fresh data, the screen shows “--”</span></div>
+      <div class="fact"><b>KT</b><span>First verified controller</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="how-it-works">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2>A module between your bike and your phone</h2>
+        <p>The module stays wired to the bike. Your phone connects to it wirelessly and becomes the display.</p>
+      </div>
+
+      <div class="flow">
+        <div class="node">
+          <small>On your bike</small>
+          <b>Controller</b>
+          <p>Runs the motor, battery and sensors.</p>
+        </div>
+        <div class="link" aria-hidden="true"><span>Cable for your controller</span></div>
+        <div class="node">
+          <small>Kadans module</small>
+          <b>Reads and relays the data</b>
+          <p>Keeps the bike running, even if the phone disconnects.</p>
+          <span class="slit" aria-hidden="true"></span>
+        </div>
+        <div class="link wireless" aria-hidden="true"><span>Wireless link</span></div>
+        <div class="node">
+          <small>Your phone</small>
+          <b>Kadans app</b>
+          <p>Shows the data and prepares settings.</p>
+        </div>
+      </div>
+
+      <ol class="steps">
+        <li><h3>Plug in the module</h3><p>Unplug the original display and plug Kadans in its place, with the cable made for your controller. No soldering.</p></li>
+        <li><h3>Open the app</h3><p>The Android app finds the module and recognizes the controller type.</p></li>
+        <li><h3>Ride</h3><p>Data shows live. Settings are changed when stopped.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="data">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What you see</p>
+        <h2>Readable data, settings you understand</h2>
+      </div>
+      <div class="split">
+        <div class="panel">
+          <h3>While riding</h3>
+          <dl class="spec">
+            <div><dt>Speed</dt><dd>km/h</dd></div>
+            <div><dt>Motor power</dt><dd>W</dd></div>
+            <div><dt>Battery</dt><dd>V · %</dd></div>
+            <div><dt>Assist level</dt><dd>0 to 5</dd></div>
+            <div><dt>Brake</dt><dd>on / off</dd></div>
+            <div><dt>Error codes</dt><dd>explained in plain words</dd></div>
+          </dl>
+          <p class="panel-note">Depending on the controller, some data may not be available. The app says so instead of showing a made-up value.</p>
+        </div>
+        <div class="panel">
+          <h3>When stopped</h3>
+          <dl class="spec">
+            <div><dt>Wheel size</dt><dd>in</dd></div>
+            <div><dt>Speed limit</dt><dd>km/h</dd></div>
+            <div><dt>Modes</dt><dd>City · Off-road</dd></div>
+            <div><dt>Lights</dt><dd>on / off</dd></div>
+            <div><dt>Ride history</dt><dd>on your phone</dd></div>
+            <div><dt>Module updates</dt><dd>through the app</dd></div>
+          </dl>
+          <p class="panel-note">Each setting is described in plain words, with its current value, before you change anything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="safety">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Safety</p>
+        <h2>The bike never depends on the phone</h2>
+      </div>
+      <ul class="rules">
+        <li><span class="rule-key">No phone</span><div><h3>The bike keeps running</h3><p>The module keeps the link with the controller on its own. A dead phone, a closed app or an update in progress does not cut the assist.</p></div></li>
+        <li><span class="rule-key">&gt; 0.5 km/h</span><div><h3>No settings while riding</h3><p>Above 0.5 km/h, or when the speed is unknown, sensitive settings are locked.</p></div></li>
+        <li><span class="rule-key">1.5 s</span><div><h3>No frozen values</h3><p>With no new data for 1.5 seconds, the screen shows “--” instead of an old number.</p></div></li>
+        <li><span class="rule-key">Verified</span><div><h3>Settings open only after verification</h3><p>A setting can be changed only once its encoding has been measured on a real controller. The most important ones need a typed confirmation.</p></div></li>
+        <li><span class="rule-key">32 km/h</span><div><h3>City mode by default</h3><p>Out of the box, speed is limited to your province's legal maximum: 32 km/h in Quebec.</p></div></li>
+        <li><span class="rule-key warn">Off-road</span><div><h3>A mode for private land</h3><p>It switches on only when stopped, with a 1.5-second press followed by a confirmation. On public roads, a bike set above 32 km/h no longer counts as a power-assisted bicycle. The rider is responsible for how this mode is used.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="check">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Compatibility</p>
+        <h2>Check my bike</h2>
+        <p>Choose your bike's system and battery voltage. Then sign up to hear when Kadans is available for your setup.</p>
+      </div>
+
+      <div class="check-grid">
+        <div class="panel">
+          <h3>My setup</h3>
+          <div class="field">
+            <label for="chk-family">Bike system or brand</label>
+            <select id="chk-family" name="family"></select>
+          </div>
+          <div class="field">
+            <label for="chk-volt">Battery voltage</label>
+            <select id="chk-volt" name="voltage"></select>
+          </div>
+          <div class="result" aria-live="polite">
+            <span id="chk-chip" class="chip idle">Waiting</span>
+            <p id="chk-text">Choose your bike's system and voltage to see the result.</p>
+          </div>
+          <p class="hint">The controller brand is on its label. The voltage is printed on the battery or the charger.</p>
+        </div>
+
+        <form class="panel" id="waitlist" novalidate data-consent-version="2026-10-08">
+          <h3>Waitlist</h3>
+          <div class="field">
+            <label for="wl-email">Email</label>
+            <input id="wl-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="wl-bike">Bike: brand and model</label>
+            <input id="wl-bike" name="bike" type="text" placeholder="e.g. Lectric XP 3.0" maxlength="120">
+          </div>
+          <div class="field">
+            <label for="wl-label">Controller label <span class="hint">(optional)</span></label>
+            <input id="wl-label" name="controller_label" type="text" placeholder="e.g. KT36/48SVPRL" maxlength="120">
+          </div>
+          <fieldset>
+            <legend class="legend">Phone</legend>
+            <div class="radios">
+              <label class="radio"><input type="radio" id="wl-android" name="phone" value="android" checked> Android</label>
+              <label class="radio"><input type="radio" id="wl-ios" name="phone" value="ios"> iPhone</label>
+            </div>
+            <p class="hint" id="ios-note" hidden>The app launches on Android first. Your answer helps us decide on an iPhone version.</p>
+          </fieldset>
+          <div class="field">
+            <label for="wl-province">Province or territory</label>
+            <select id="wl-province" name="province">
+              <option value="QC" selected>Quebec</option>
+              <option value="ON">Ontario</option>
+              <option value="BC">British Columbia</option>
+              <option value="AB">Alberta</option>
+              <option value="MB">Manitoba</option>
+              <option value="SK">Saskatchewan</option>
+              <option value="NS">Nova Scotia</option>
+              <option value="NB">New Brunswick</option>
+              <option value="NL">Newfoundland and Labrador</option>
+              <option value="PE">Prince Edward Island</option>
+              <option value="YT">Yukon</option>
+              <option value="NT">Northwest Territories</option>
+              <option value="NU">Nunavut</option>
+              <option value="XX">Outside Canada</option>
+            </select>
+          </div>
+          <label class="consent" for="wl-consent">
+            <input id="wl-consent" name="consent" type="checkbox">
+            <span>I agree to receive emails from FORGE about Kadans: availability, compatibility with my bike and launch. I can unsubscribe at any time. See the <a href="privacy/index.html">privacy policy</a>.</span>
+          </label>
+          <div class="hp" aria-hidden="true"><label for="wl-website">Website</label><input id="wl-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <button class="btn btn-primary" type="submit">Sign me up</button>
+          <p id="form-msg" class="form-msg" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Questions</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details><summary>Do I need an Android phone?</summary><p>Yes, at launch. An iPhone version depends on demand. Tell us your phone in the form.</p></details>
+        <details><summary>What happens if my phone dies?</summary><p>The bike keeps working with the assist level you chose. You lose the display until the phone reconnects. A phone mount with charging is recommended.</p></details>
+        <details><summary>Does installation need soldering?</summary><p>No. Kadans plugs into the original display's connector, with a cable made for your controller. Keep the original display: you can plug it back in at any time.</p></details>
+        <details><summary>Why aren't Bosch and Shimano supported?</summary><p>Their systems are closed, and each already offers its own app that turns the phone into a display.</p></details>
+        <details><summary>How much will it cost?</summary><p>The price will be announced at launch. People on the waitlist will hear it first.</p></details>
+        <details><summary>Do I need an account?</summary><p>No. The app doesn't ask for an account, and your ride history stays on your phone.</p></details>
+        <details><summary>When will Kadans be available?</summary><p>The prototype works on a bike with a KT controller. The date depends on certification and ongoing testing. The waitlist will hear first.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-row">
+      <span class="brand"><span class="brand-word">KADANS</span>
+        <span class="brand-by">by
+          <svg class="forge-mark" viewBox="0 0 100 84" aria-hidden="true"><path class="a" d="M0 0H100L82 30H18Z"/><path class="b" d="M22.8 38H77.2L50 83.3Z"/></svg>
+          FORGE · Montreal, Quebec</span></span>
+      <div class="foot-links">
+        <a href="privacy/index.html">Privacy</a>
+        <a href="../index.html" lang="fr" hreflang="fr">Français</a>
+      </div>
+    </div>
+    <p>Write to us: <span class="contact">bonjour@kadans.ca</span></p>
+    <p>Product in development. Features and compatibility may change before launch.</p>
+  </div>
+</footer>
+
+<script src="../assets/compat.js" defer></script>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>
