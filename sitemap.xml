@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://kadans.ca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://kadans.ca/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://kadans.ca/en/"/>
+  </url>
+  <url>
+    <loc>https://kadans.ca/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://kadans.ca/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://kadans.ca/en/"/>
+  </url>
+  <url>
+    <loc>https://kadans.ca/confidentialite/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://kadans.ca/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://kadans.ca/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://kadans.ca/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://kadans.ca/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://kadans.ca/en/privacy/"/>
+  </url>
+</urlset>
