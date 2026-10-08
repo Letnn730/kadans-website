@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://kadans.ca/sitemap.xml
+Sitemap: https://kurant.ca/sitemap.xml

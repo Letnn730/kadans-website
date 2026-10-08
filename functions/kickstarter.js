@@ -1,4 +1,4 @@
-// kadans.ca/kickstarter: one short link for flyers, QR codes and social bios.
+// kurant.ca/kickstarter: one short link for flyers, QR codes and social bios.
 // It follows assets/campaign.json, so the campaign link lives in one file only.
 // While the campaign is "off" (or the file is unreadable) it falls back to the waitlist.
 

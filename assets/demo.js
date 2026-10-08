@@ -1,4 +1,4 @@
-/* Kadans app demo.
+/* Kurant app demo.
  *
  * A browser mirror of the Android app connected to its built-in simulator. Screens,
  * wording and safety rules follow ebike-app:
@@ -32,7 +32,7 @@
   /* ---------------------------------------------------------------- strings */
 
   const T = FR ? {
-    region: "Démo interactive de l'application Kadans, en simulation",
+    region: "Démo interactive de l'application Kurant, en simulation",
     sim: "Simulation", ride: "Rouler", settings: "Réglages",
     simulator: "Simulateur", connDetails: "Détails de la connexion",
     street: "Ville", offroad: "Hors-route",
@@ -71,10 +71,10 @@
     changeQ: (l) => `Modifier « ${l} » ?`,
     typedBody: "Ce réglage touche la sécurité ou la légalité. Tapez CONFIRMER pour l'appliquer.",
     typedWord: "CONFIRMER", typedLabel: "Tapez CONFIRMER",
-    secDevice: "Appareil", connection: "Connexion", firmware: "Micrologiciel du module", withModule: "Offert avec le module Kadans",
+    secDevice: "Appareil", connection: "Connexion", firmware: "Micrologiciel du module", withModule: "Offert avec le module Kurant",
     foot: `Démo web · ${PROFILE.id} v${PROFILE.version}`,
     sheetTitle: "Connexion", source: "Source", virtualBike: "Vélo virtuel",
-    module: "Module Kadans", moduleSub: "Sans fil · offert avec le module",
+    module: "Module Kurant", moduleSub: "Sans fil · offert avec le module",
     running: `Vélo simulé en marche · ${PROFILE.name}`,
     profiles: "Profil du contrôleur",
     done: "Fermer",
@@ -89,7 +89,7 @@
       c13: ["Freinage régénératif (C13)", "Force du freinage régénératif, si votre moteur le permet (moteurs-roues à prise directe seulement). Les moteurs à engrenages l'ignorent."],
     },
   } : {
-    region: "Interactive demo of the Kadans app, in simulation",
+    region: "Interactive demo of the Kurant app, in simulation",
     sim: "Simulation", ride: "Ride", settings: "Settings",
     simulator: "Simulator", connDetails: "Connection details",
     street: "Street", offroad: "Offroad",
@@ -128,10 +128,10 @@
     changeQ: (l) => `Change ${l}?`,
     typedBody: "This setting affects safety or legality. Type CONFIRM to apply it.",
     typedWord: "CONFIRM", typedLabel: "Type CONFIRM",
-    secDevice: "Device", connection: "Connection", firmware: "Module firmware", withModule: "Comes with the Kadans module",
+    secDevice: "Device", connection: "Connection", firmware: "Module firmware", withModule: "Comes with the Kurant module",
     foot: `Web demo · ${PROFILE.id} v${PROFILE.version}`,
     sheetTitle: "Connection", source: "Source", virtualBike: "Virtual bike",
-    module: "Kadans module", moduleSub: "Wireless · comes with the module",
+    module: "Kurant module", moduleSub: "Wireless · comes with the module",
     running: `Simulated bike running · ${PROFILE.name}`,
     profiles: "Controller profile",
     done: "Close",
@@ -280,7 +280,7 @@
     [el("span", { class: "kd-tab-ico", html: icon("ride", 22) }), el("span", { text: T.ride })]);
   const tabSettings = el("button", { class: "kd-tab", role: "tab", "aria-selected": "false", "aria-controls": "kd-settings", tabindex: "-1" },
     [el("span", { class: "kd-tab-ico", html: icon("tune", 22) }), el("span", { text: T.settings })]);
-  const nav = el("nav", { class: "kd-nav", role: "tablist", "aria-label": "Kadans" }, [tabRide, tabSettings]);
+  const nav = el("nav", { class: "kd-nav", role: "tablist", "aria-label": "Kurant" }, [tabRide, tabSettings]);
   const snack = el("div", { class: "kd-snack", role: "status", "aria-live": "polite" });
   app.append(status, body, nav, snack);
 

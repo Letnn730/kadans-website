@@ -2,7 +2,7 @@
    Status: "ok" = supported at launch, "check" = to be confirmed, "no" = not supported yet.
    Keep in step with the ebike-profiles repo: a family is "ok" only when its
    profile is bench-verified. */
-window.KADANS_COMPAT = {
+window.KURANT_COMPAT = {
   families: [
     { id: "kt", status: "ok",
       fr: { name: "KT (Kunteng) – écrans LCD3, LCD5, LCD8, VM-T8", note: "Vérifié sur banc d'essai avec un contrôleur KT. Câble KT inclus." },
