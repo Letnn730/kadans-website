@@ -1,6 +1,6 @@
-/* Kadans app demo: the Android app's screens, running its simulator in the browser.
+/* Kurant app demo: the Android app's screens, running its simulator in the browser.
    Layout and states mirror ebike-app (DashboardScreen, SettingsScreen, SpeedModeUi,
-   ConnectionSheet). Palette is the app's RideTheme, with the Kadans cyan as primary.
+   ConnectionSheet). Palette is the app's RideTheme, with the Kurant cyan as primary.
    Everything is scoped under .kd so it never leaks into the page. */
 
 .kd {

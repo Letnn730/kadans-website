@@ -3,10 +3,10 @@
   var root = document.querySelector("[data-lang]");
   if (!root) return;
   var lang = root.getAttribute("data-lang") === "en" ? "en" : "fr";
-  var data = window.KADANS_COMPAT;
+  var data = window.KURANT_COMPAT;
 
   // Outside the real site (e.g. a design preview), the form shows a message instead of sending.
-  var LIVE = /(^|\.)kadans\.ca$|\.pages\.dev$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
+  var LIVE = /(^|\.)kurant\.ca$|\.pages\.dev$|^localhost$|^127\.0\.0\.1$/.test(location.hostname);
 
   var T = {
     fr: {
@@ -15,8 +15,8 @@
       idle: "Choisissez le système et la tension de votre vélo pour voir le résultat.",
       okText: "Votre configuration est prévue au lancement.",
       sending: "Envoi…",
-      done: "C'est noté. Nous vous écrirons quand Kadans sera disponible pour votre vélo.",
-      preview: "Aperçu : rien n'a été envoyé. Le formulaire sera actif sur kadans.ca.",
+      done: "C'est noté. Nous vous écrirons quand Kurant sera disponible pour votre vélo.",
+      preview: "Aperçu : rien n'a été envoyé. Le formulaire sera actif sur kurant.ca.",
       fail: "L'inscription n'a pas fonctionné. Vérifiez votre connexion et réessayez.",
       email: "Entrez une adresse courriel valide.",
       consent: "Cochez la case de consentement pour vous inscrire."
@@ -27,8 +27,8 @@
       idle: "Choose your bike's system and voltage to see the result.",
       okText: "Your setup is planned for launch.",
       sending: "Sending…",
-      done: "Done. We'll email you when Kadans is available for your bike.",
-      preview: "Preview: nothing was sent. The form will be live on kadans.ca.",
+      done: "Done. We'll email you when Kurant is available for your bike.",
+      preview: "Preview: nothing was sent. The form will be live on kurant.ca.",
       fail: "Sign-up didn't go through. Check your connection and try again.",
       email: "Enter a valid email address.",
       consent: "Tick the consent box to sign up."
