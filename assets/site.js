@@ -78,12 +78,6 @@
     update();
   }
 
-  // iPhone note
-  var iosNote = document.getElementById("ios-note");
-  document.querySelectorAll('input[name="phone"]').forEach(function (r) {
-    r.addEventListener("change", function () { if (iosNote) iosNote.hidden = r.value !== "ios" || !r.checked; });
-  });
-
   // Waitlist
   var form = document.getElementById("waitlist");
   var msg = document.getElementById("form-msg");

@@ -22,7 +22,7 @@
   const KICKSTARTER = /(^|\.)kickstarter\.com$/;
   const PRODUCTION = /(^|\.)kurant\.ca$/.test(location.hostname);
 
-  const price = (cad) => (lang === "fr" ? `${cad} $` : `CAD ${cad}`);
+  const price = (cad) => (lang === "fr" ? `${cad}\u00a0$` : `CAD ${cad}`);
   const day = (iso) => {
     const date = iso ? new Date(`${iso}T12:00:00`) : null;
     if (!date || Number.isNaN(date.getTime())) return "";
@@ -79,7 +79,7 @@
     const href = safeUrl(campaign.url) || (preview ? "https://www.kickstarter.com/" : null);
     if (!href) return;
 
-    const copy = TEXT[state]({ date: day(campaign.launch), early: Number(campaign.early_bird_cad) || 129 });
+    const copy = TEXT[state]({ date: day(campaign.launch), early: Number(campaign.early_bird_cad) || 119 });
 
     // Banner under the header.
     const banner = document.createElement("aside");
